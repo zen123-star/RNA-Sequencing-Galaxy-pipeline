@@ -1,4 +1,4 @@
- Reference-based RNA-Seq Data Analysis Pipeline
+ # Reference-based RNA-Seq Data Analysis Pipeline
 
 A complete walkthrough of an RNA-Seq differential gene expression analysis pipeline run on *Drosophila melanogaster* data — from raw FASTQ reads to functional pathway enrichment.
 
