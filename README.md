@@ -1,4 +1,4 @@
-# Reference-based RNA-Seq Data Analysis Pipeline
+ Reference-based RNA-Seq Data Analysis Pipeline
 
 A complete walkthrough of an RNA-Seq differential gene expression analysis pipeline run on *Drosophila melanogaster* data — from raw FASTQ reads to functional pathway enrichment.
 
@@ -244,6 +244,15 @@ Drosophila_melanogaster.BDGP6.32.109_UCSC.gtf.gz    ← gene annotation
 - **Grey coverage peaks** — read depth across the region; higher = more expression
 - **Connecting arcs/lines between reads** — these are spliced reads spanning introns; the arc represents the skipped intron
 - **Sashimi plots** — arcs with numbers represent splice junctions; numbers = how many reads support each junction
+- IGV:
+<img width="1136" height="233" alt="igv_panel" src="https://github.com/user-attachments/assets/860d1b09-7a3a-4aa2-aff5-c7d1b945464a" />
+
+<img width="1136" height="680" alt="igv_snapshot" src="https://github.com/user-attachments/assets/45947ec2-bfb7-4b85-8055-6d14dfb5c886" />
+Sashmi plot:
+<img width="930" height="733" alt="Sashimi" src="https://github.com/user-attachments/assets/9e58975d-6c1c-499f-99d5-ec77f1377575" />
+Jbrowse:
+<img width="1246" height="975" alt="jbrowse" src="https://github.com/user-attachments/assets/2453899e-adef-4d5f-bc4a-6f44a96cd4f5" />
+
 
 ---
 
@@ -498,6 +507,8 @@ Normalized counts for the most DE genes    ← joined from DESeq2 normalized cou
 | Color scheme | 2-color gradient |
 
 **Output:** Heatmap PNG
+<img width="840" height="843" alt="image" src="https://github.com/user-attachments/assets/d7e409fb-7a51-4c13-a218-0db7b1f1b271" />
+
 
 - X-axis: 7 samples
 - Y-axis: 113 DE genes (clustered)
@@ -526,6 +537,7 @@ For each gene, the Z-score is how many standard deviations a sample's expression
 ```
 Z-score formula:  z = (x_ij − mean_i) / sd_i
 ```
+<img width="832" height="838" alt="image" src="https://github.com/user-attachments/assets/59364dfb-7e7c-43ff-bd2f-50f8a14de394" />
 
 ---
 
@@ -661,6 +673,8 @@ Gene IDs and length
 | Plot on same layer | Yes |
 
 **Output:** One pathway image per ID
+<img width="663" height="912" alt="image" src="https://github.com/user-attachments/assets/7cd94a78-4b32-450b-b62d-48f4fde35df4" />
+<img width="840" height="760" alt="image" src="https://github.com/user-attachments/assets/36bc2ac9-1a1c-499b-a5c9-0a99f25a0bc7" />
 
 **Interpretation of pathway images:**
 - Each **box** = a gene/enzyme in the pathway
